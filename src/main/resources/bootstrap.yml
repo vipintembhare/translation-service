@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: client-config
+  cloud:
+    config:
+     uri: http://localhost:8888/config-server
+  profiles:
+    active: default
+        
+management:
+  security:
+    enabled: false
+    
+server:
+  port: 8080
