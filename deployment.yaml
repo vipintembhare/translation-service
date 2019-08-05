@@ -19,8 +19,8 @@ spec:
       containers:
       - name: "translation-service"
         image: "gcr.io/conference-console/translation-service"
-        imagePullSecrets:
-          - name: gcrsecret
+      imagePullSecrets:
+      - name: gcrsecret
 ---
 apiVersion: "autoscaling/v2beta1"
 kind: "HorizontalPodAutoscaler"
