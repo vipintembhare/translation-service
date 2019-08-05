@@ -36,7 +36,7 @@ volumes: [
     }
    stage('Deploy Stage') {
       container('kubectl') {
-          withKubeConfig([credentialsId: 'devcluster', serverUrl: 'https://35.184.129.2']) {
+          withKubeConfig([credentialsId: 'devcluster', serverUrl: 'https://35.222.86.49']) {
        sh "kubectl apply -f deployment.yaml"
       }
       }
