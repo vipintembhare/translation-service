@@ -28,7 +28,7 @@ volumes: [
               def image = docker.build("${IMAGE_TAG}")
                     println "Newly generated image, " + image.id
                     
-                    docker.withRegistry('https://eu.gcr.io', 'gcr:gke-jenkins-key') {
+                    docker.withRegistry('https://gcr.io', 'gcr:gke-jenkins-key') {
                            image.push('latest')
                     }
 
