@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: "translation-service"
-        image: "gcr.io/conference-console/translation-service"
+        image: "gcr.io/conference-console/translation-service:latest"
       imagePullSecrets:
       - name: gcrsecret
 ---
